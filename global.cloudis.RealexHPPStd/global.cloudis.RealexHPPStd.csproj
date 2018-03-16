@@ -24,7 +24,6 @@ This is heavily based on the Java API created by Realex - https://github.com/rea
     <PackageReference Include="Newtonsoft.Json" Version="11.0.1" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="4.4.1" />
     <PackageReference Include="NuGet.Build.Packaging" Version="0.2.0" />
-    <PackageReference Include="System.Runtime.Serialization.Primitives" Version="4.3.0" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="HPPMessages_old.resx" />
