@@ -8,24 +8,49 @@ This is heavily based on the Java API created by Realex - https://github.com/rea
 
 </Description>
     <PackOnBuild>true</PackOnBuild>
-    <PackageVersion>0.1</PackageVersion>
+    <PackageVersion>0.1.1</PackageVersion>
     <Authors>Oliver Wood</Authors>
     <Owners>Oliver Wood</Owners>
     <PackageProjectUrl>https://github.com/oliver-wood/realex-hpp-dotnet-standard</PackageProjectUrl>
-    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <PackageReleaseNotes>Updated embedded resources</PackageReleaseNotes>
     <Title>Realex HPP intregration library</Title>
     <PackageId>global.cloudis.realexHPPStd</PackageId>
+    <RootNamespace>global.cloudis.RealexHPP</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Class1.cs" />
-    <Compile Remove="resources\HPPConfiguration.cs" />
-    <Compile Remove="resources\HPPMessages.cs" />
-    <Compile Remove="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="11.0.1" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="4.4.1" />
     <PackageReference Include="NuGet.Build.Packaging" Version="0.2.0" />
+    <PackageReference Include="System.Runtime.Serialization.Primitives" Version="4.3.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="HPPMessages_old.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Condition=" '$(EnableDefaultEmbeddedResourceItems)' == 'true' " Update="HPPMessages.resx">
+      <IncludeInPackage>false</IncludeInPackage>
+      <LastGenOutput>Test.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Test.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Test.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Condition=" '$(EnableDefaultEmbeddedResourceItems)' == 'true' " Update="HPPMessages_old.resx">
+      <IncludeInPackage>false</IncludeInPackage>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Test.Designer.cs">
+      <DependentUpon>HPPMessages.resx</DependentUpon>
+    </Compile>
+    <Compile Update="HPPMessages.Designer.cs">
+      <DependentUpon>HPPMessages.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>
