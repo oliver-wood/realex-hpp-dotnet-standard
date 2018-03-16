@@ -12,7 +12,6 @@ This is heavily based on the Java API created by Realex - https://github.com/rea
     <Authors>Oliver Wood</Authors>
     <Owners>Oliver Wood</Owners>
     <PackageProjectUrl>https://github.com/oliver-wood/realex-hpp-dotnet-standard</PackageProjectUrl>
-    <PackageReleaseNotes>Updated embedded resources</PackageReleaseNotes>
     <Title>Realex HPP intregration library</Title>
     <PackageId>global.cloudis.realexHPPStd</PackageId>
     <RootNamespace>global.cloudis.RealexHPP</RootNamespace>
