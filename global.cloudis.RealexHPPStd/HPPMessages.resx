@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="hppRequest_merchantId_size" xml:space="preserve">
+    <value>Merchant ID is required and must be between 1 and 50 characters</value>
+  </data>
+  <data name="hppRequest_merchantId_pattern" xml:space="preserve">
+    <value>Merchant ID must only contain alphanumeric characters</value>
+  </data>
+  <data name="hppRequest_account_size" xml:space="preserve">
+    <value>Account must be 30 characters or less</value>
+  </data>
+  <data name="hppRequest_account_pattern" xml:space="preserve">
+    <value>Account must only contain alphanumeric characters</value>
+  </data>
+  <data name="hppRequest_orderId_size" xml:space="preserve">
+    <value>Order ID must be less than 50 characters in length</value>
+  </data>
+  <data name="hppRequest_orderId_pattern" xml:space="preserve">
+    <value>Order ID must only contain alphanumeric characters, dash and underscore</value>
+  </data>
+  <data name="hppRequest_amount_size" xml:space="preserve">
+    <value>Amount is required and must be 11 characters or less</value>
+  </data>
+  <data name="hppRequest_amount_pattern" xml:space="preserve">
+    <value>Amount must only include numeric characters</value>
+  </data>
+  <data name="hppRequest_amount_otb" xml:space="preserve">
+    <value>Amount must be 0 for OTB transactions (where validate card only set to 1)</value>
+  </data>
+  <data name="hppRequest_currency_size" xml:space="preserve">
+    <value>Currency is required and must be 3 characters in length</value>
+  </data>
+  <data name="hppRequest_currency_pattern" xml:space="preserve">
+    <value>Currency must only consist of alphabetic characters</value>
+  </data>
+  <data name="hppRequest_timestamp_size" xml:space="preserve">
+    <value>Time stamp is required and must be 14 characters in length</value>
+  </data>
+  <data name="hppRequest_timestamp_pattern" xml:space="preserve">
+    <value>Time stamp must be in YYYYMMDDHHMMSS format</value>
+  </data>
+  <data name="hppRequest_hash_size" xml:space="preserve">
+    <value>Security hash must be 40 characters in length</value>
+  </data>
+  <data name="hppRequest_hash_pattern" xml:space="preserve">
+    <value>Security hash must only contain numeric and a-f characters</value>
+  </data>
+  <data name="hppRequest_autoSettleFlag_pattern" xml:space="preserve">
+    <value>Auto settle flag must be 0, 1, on, off or multi</value>
+  </data>
+  <data name="hppRequest_comment1_size" xml:space="preserve">
+    <value>Comment 1 must be less than 255 characters in length</value>
+  </data>
+  <data name="hppRequest_comment1_pattern" xml:space="preserve">
+    <value>Comment 1 must only contain the characters a-z A-Z 0-9 ' ", + \u201C\u201D ._ - &amp; \ / @ ! ? % ( ) * : £ $ &amp; \u20AC # [ ] | = ; ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷ø¤ùúûüýþÿ\u0152\u017D\u0161\u0153\u017E\u0178¥</value>
+  </data>
+  <data name="hppRequest_comment2_size" xml:space="preserve">
+    <value>Comment 2 must be less than 255 characters in length</value>
+  </data>
+  <data name="hppRequest_comment2_pattern" xml:space="preserve">
+    <value>Comment 2 must only contain the characters a-z A-Z 0-9 ' ", + \u201C\u201D ._ - &amp; \ / @ ! ? % ( ) * : £ $ &amp; \u20AC # [ ] | = ; ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷ø¤ùúûüýþÿ\u0152\u017D\u0161\u0153\u017E\u0178¥</value>
+  </data>
+  <data name="hppRequest_returnTss_size" xml:space="preserve">
+    <value>Return TSS flag must not be more than 1 character in length</value>
+  </data>
+  <data name="hppRequest_returnTss_pattern" xml:space="preserve">
+    <value>Return TSS must be 1 or 0</value>
+  </data>
+  <data name="hppRequest_shippingCode_size" xml:space="preserve">
+    <value>Shipping code must not be more than 30 characters in length</value>
+  </data>
+  <data name="hppRequest_shippingCode_pattern" xml:space="preserve">
+    <value>Shipping code must be of format [digits from postcode]|[digits from address] and contain only a-z A-Z 0-9 , . - / | spaces</value>
+  </data>
+  <data name="hppRequest_shippingCountry_size" xml:space="preserve">
+    <value>Shipping country must not contain more than 50 characters</value>
+  </data>
+  <data name="hppRequest_shippingCountry_pattern" xml:space="preserve">
+    <value>Shipping country must only contain the characters A-Z a-z 0-9 , . -</value>
+  </data>
+  <data name="hppRequest_billingCode_size" xml:space="preserve">
+    <value>Billing code must not be more than 60 characters in length</value>
+  </data>
+  <data name="hppRequest_billingCode_pattern" xml:space="preserve">
+    <value>Billing code must be of format [digits from postcode]|[digits from address] and contain only a-z A-Z 0-9 , . - / | spaces</value>
+  </data>
+  <data name="hppRequest_billingCountry_size" xml:space="preserve">
+    <value>Billing country must not contain more than 50 characters</value>
+  </data>
+  <data name="hppRequest_billingCountry_pattern" xml:space="preserve">
+    <value>Billing country must only contain the characters A-Z a-z 0-9 , . -</value>
+  </data>
+  <data name="hppRequest_customerNumber_size" xml:space="preserve">
+    <value>Customer number must not contain more than 50 characters</value>
+  </data>
+  <data name="hppRequest_customerNumber_pattern" xml:space="preserve">
+    <value>Customer number must only contain the characters a-z A-Z 0-9 - _ . , + @ spaces</value>
+  </data>
+  <data name="hppRequest_variableReference_size" xml:space="preserve">
+    <value>Variable reference must not contain more than 50 characters</value>
+  </data>
+  <data name="hppRequest_variableReference_pattern" xml:space="preserve">
+    <value>Variable reference must only contain the characters a-z A-Z 0-9 - _ . , + @ spaces</value>
+  </data>
+  <data name="hppRequest_productId_size" xml:space="preserve">
+    <value>Product ID must not contain more than 50 characters</value>
+  </data>
+  <data name="hppRequest_productId_pattern" xml:space="preserve">
+    <value>Product ID must only contain the characters a-z A-Z 0-9 - _ . , + @ spaces</value>
+  </data>
+  <data name="hppRequest_language_pattern" xml:space="preserve">
+    <value>Language must be 2 alphabetic characters only, optionally followed by an underscore and alphabetic country or region code</value>
+  </data>
+  <data name="hppRequest_cardPaymentButtonText_size" xml:space="preserve">
+    <value>Card payment button text must not contain more than 25 characters</value>
+  </data>
+  <data name="hppRequest_cardPaymentButtonText_pattern" xml:space="preserve">
+    <value>Card payment button text must only contain the characters a-z A-Z 0-9 ' , + \u201C\u201D ._ - &amp; \ / @!? % ( ) * :£ $ &amp; \u20AC # [] | =</value>
+  </data>
+  <data name="hppRequest_cardStorageEnable_size" xml:space="preserve">
+    <value>Card storage enable flag must not be more than 1 character in length</value>
+  </data>
+  <data name="hppRequest_cardStorageEnable_pattern" xml:space="preserve">
+    <value>Card storage enable flag must be 1 or 0</value>
+  </data>
+  <data name="hppRequest_offerSaveCard_size" xml:space="preserve">
+    <value>Offer to save card flag must not be more than 1 character in length</value>
+  </data>
+  <data name="hppRequest_offerSaveCard_pattern" xml:space="preserve">
+    <value>Offer to save card flag must be 1 or 0</value>
+  </data>
+  <data name="hppRequest_payerReference_size" xml:space="preserve">
+    <value>Payer reference must not be more than 50 characters in length</value>
+  </data>
+  <data name="hppRequest_payerReference_pattern" xml:space="preserve">
+    <value>Payer reference must only contain the characters a-z A-Z\ 0-9 _ spaces</value>
+  </data>
+  <data name="hppRequest_paymentReference_size" xml:space="preserve">
+    <value>Payment reference must not be more than 50 characters in length</value>
+  </data>
+  <data name="hppRequest_paymentReference_pattern" xml:space="preserve">
+    <value>Payment reference must only contain  characters a-z A-Z 0-9 _ - spaces</value>
+  </data>
+  <data name="hppRequest_payerExists_size" xml:space="preserve">
+    <value>Payer exists flag must not be more than 1 character in length</value>
+  </data>
+  <data name="hppRequest_payerExists_pattern" xml:space="preserve">
+    <value>Payer exists flag must be 0, 1 or 2</value>
+  </data>
+  <data name="hppRequest_validateCardOnly_size" xml:space="preserve">
+    <value>Validate card only flag must not be more than 1 character in length</value>
+  </data>
+  <data name="hppRequest_validateCardOnly_pattern" xml:space="preserve">
+    <value>Validate card only flag must be 1 or 0</value>
+  </data>
+  <data name="hppRequest_dccEnable_size" xml:space="preserve">
+    <value>DCC enable flag must not be more than 1 character in length</value>
+  </data>
+  <data name="hppRequest_dccEnable_pattern" xml:space="preserve">
+    <value>DCC enable flag must be 1 or 0</value>
+  </data>
+  <data name="hppRequest_hppFraudFilterMode_size" xml:space="preserve">
+    <value>HPP Fraud Filter Mode flag must not be more than 7 characters in length</value>
+  </data>
+  <data name="hppRequest_hppFraudFilterMode_pattern" xml:space="preserve">
+    <value>HPP Fraud Filter Mode flag must be ACTIVE, PASSIVE or OFF</value>
+  </data>
+  <data name="hppRequest_hppVersion_size" xml:space="preserve">
+    <value>Version flag must not be more than 1 character in length</value>
+  </data>
+  <data name="hppRequest_hppVersion_pattern" xml:space="preserve">
+    <value>Version must only contain the numbers between 1 and 2</value>
+  </data>
+  <data name="hppRequest_hppSelectStoredCard_size" xml:space="preserve">
+    <value>Select stored card must not be more than 50 characters in length</value>
+  </data>
+  <data name="hppRequest_hppSelectStoredCard_pattern" xml:space="preserve">
+    <value>Select stored card must only contain the characters a-z A-Z\ 0-9 _ spaces</value>
+  </data>
+  <data name="hppRequest_channel_pattern" xml:space="preserve">
+    <value>Channel is optional but if set must be either "ECOM" or "MOTO"</value>
+  </data>
+  <data name="hppRequest_channel_size" xml:space="preserve">
+    <value>Channel is optional but if set must be either "ECOM" or "MOTO"</value>
+  </data>
+  <data name="hppResponse_message_101" xml:space="preserve">
+    <value>Transaction declined. Please check that you entered your card details correctly</value>
+    <comment>Declined by Bank – generally insufficient funds or incorrect card details (e.g. expiry date, card security code)</comment>
+  </data>
+  <data name="hppResponse_message_102" xml:space="preserve">
+    <value>Transaction declined. Please check that you entered your card details correctly</value>
+    <comment>Referral to Bank (usually treated as a standard decline for ecommerce systems)</comment>
+  </data>
+  <data name="hppResponse_message_103" xml:space="preserve">
+    <value>Transaction declined. Please check that you entered your card details correctly</value>
+    <comment>103 Card reported lost or stolen; may be indicative of attempted fraud</comment>
+  </data>
+  <data name="hppResponse_message_2xx" xml:space="preserve">
+    <value>Transaction failed due to error with bank systems</value>
+    <comment>Transaction failed due to error with bank systems</comment>
+  </data>
+  <data name="hppResponse_message_3xx" xml:space="preserve">
+    <value>Transaction failed due to error with Realex systems</value>
+    <comment>Transaction failed due to error with Realex systems</comment>
+  </data>
+  <data name="hppResponse_message_107" xml:space="preserve">
+    <value>Transaction declined. Please check that you entered your card details correctly</value>
+    <comment>The transaction has been blocked as potentially fraudulent by your fraud management configuration</comment>
+  </data>
+  <data name="hppResponse_message_1xx" xml:space="preserve">
+    <value>Transaction declined. Please check that you entered your card details correctly</value>
+    <comment>Treat as a decline like 101</comment>
+  </data>
+  <data name="hppResponse_message_5xx" xml:space="preserve">
+    <value>Error processing transaction</value>
+    <comment>Technical error. Check the log file</comment>
+  </data>
+  <data name="hppResponse_message_666" xml:space="preserve">
+    <value>Error processing transaction</value>
+    <comment>Account suspended!</comment>
+  </data>
+  <data name="hppResponse_message_599" xml:space="preserve">
+    <value>Error processing transaction</value>
+    <comment>Technical error - couldn't correctly process the HPPResponse</comment>
+  </data>
+  <data name="hppResponse_message_unknown" xml:space="preserve">
+    <value>Error processing transaction</value>
+    <comment>Technical error, can't find a matching error message for the result code</comment>
+  </data>
+  <data name="hppResponse_message_598" xml:space="preserve">
+    <value>Transaction successful, but error processing transaction</value>
+    <comment>The card transaction was successful but we could not process the response. Please contact us to resolve this problem.</comment>
+  </data>
+</root>

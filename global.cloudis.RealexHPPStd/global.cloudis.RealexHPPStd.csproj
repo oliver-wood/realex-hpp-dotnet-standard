@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>A library that can be used when communicating with the Realex Hosted Payment Page (PCI-compliant) solution.
+
+This is heavily based on the Java API created by Realex - https://github.com/realexpayments/rxp-hpp-java
+
+</Description>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageVersion>0.1</PackageVersion>
+    <Authors>Oliver Wood</Authors>
+    <Owners>Oliver Wood</Owners>
+    <PackageProjectUrl>https://github.com/oliver-wood/realex-hpp-dotnet-standard</PackageProjectUrl>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <Title>Realex HPP intregration library</Title>
+    <PackageId>global.cloudis.realexHPPStd</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+    <Compile Remove="resources\HPPConfiguration.cs" />
+    <Compile Remove="resources\HPPMessages.cs" />
+    <Compile Remove="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.1" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.4.1" />
+    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.0" />
+  </ItemGroup>
+</Project>
