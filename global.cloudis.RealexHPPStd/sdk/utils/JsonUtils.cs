@@ -67,7 +67,7 @@ namespace global.cloudis.RealexHPP.sdk.utils
             var supplementaryData = new Dictionary<string, string>();
 
 
-            foreach (PropertyInfo pi in typeof(HPPResponse).GetProperties().Where(p => p.GetCustomAttributes(attrType, false).Count() > 0))
+            foreach (PropertyInfo pi in typeof(HPPResponse).GetTypeInfo().DeclaredProperties.Where(p => p.GetCustomAttributes(attrType, false).Count() > 0))
             {
                 fields.Add(((JsonPropertyAttribute)(pi.GetCustomAttributes(attrType, false).First())).PropertyName, pi.Name);
             }
@@ -80,7 +80,7 @@ namespace global.cloudis.RealexHPP.sdk.utils
 
                 if (fields.Keys.Contains(attribute))
                 {
-                    resp.GetType().GetProperty(fields[attribute]).SetValue(resp, reader.ReadAsString());
+                    resp.GetType().GetTypeInfo().GetDeclaredProperty(fields[attribute]).SetValue(resp, reader.ReadAsString());
                 }
                 else
                 {

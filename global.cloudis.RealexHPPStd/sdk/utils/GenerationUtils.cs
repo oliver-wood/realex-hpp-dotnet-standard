@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace global.cloudis.RealexHPP.sdk.utils
 {
@@ -58,7 +55,7 @@ namespace global.cloudis.RealexHPP.sdk.utils
         /// <returns></returns>
         public static string GenerateHash(string toHash, string secret)
         {
-            using (SHA1Managed sha1 = new SHA1Managed())
+            using (var sha1 = SHA1.Create())
             {
                 var hashFirstPass = sha1.ComputeHash(Encoding.UTF8.GetBytes(toHash));
                 var sbHashFirstPass = new StringBuilder((hashFirstPass.Length * 2));

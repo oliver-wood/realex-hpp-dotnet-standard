@@ -36,7 +36,7 @@ namespace global.cloudis.RealexHPP
             {
                 if (object.Equals(null, resourceMan))
                 {
-                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("global.cloudis.RealexHPP.HPPMessages", typeof(HPPMessages).Assembly);
+                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("global.cloudis.RealexHPP.HPPMessages", typeof(HPPMessages).GetTypeInfo().Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
