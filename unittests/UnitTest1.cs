@@ -17,7 +17,7 @@ namespace unittests
         public void TestValidateRequestHash()
         {
             string timeStamp = "20170727073914";
-            string merchantId = "dogstrusttest";
+            string merchantId = "merchant";
             string orderId = "2000019";
             string amount = "1000";
             string currency = "GBP";
@@ -43,7 +43,7 @@ namespace unittests
         public void TestRequestAsNVC()
         {
             string timeStamp = "20170727073914";
-            string merchantId = "dogstrusttest";
+            string merchantId = "merchant";
             string orderId = "2000019";
             string amount = "1000";
             string currency = "GBP";
